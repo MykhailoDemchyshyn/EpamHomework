@@ -8,6 +8,7 @@ namespace Homework.Homework_1
     {
         public double Real { get; set; }
         public double Imaginary { get; set; }
+        #region constructors
         public ComplexNumber_Task5_()
         {
             Real = 0;
@@ -18,6 +19,8 @@ namespace Homework.Homework_1
             Real = _Real;
             Imaginary = _Imagionary;
         }
+        #endregion
+        #region operators
         public static ComplexNumber_Task5_ operator *(ComplexNumber_Task5_ numb1, ComplexNumber_Task5_ numb2)
         {
             ComplexNumber_Task5_ Product = new ComplexNumber_Task5_();
@@ -32,5 +35,6 @@ namespace Homework.Homework_1
             Quotient.Imaginary = numb1.Imaginary / numb2.Imaginary;
             return Quotient;
         }
+        #endregion
     }
 }

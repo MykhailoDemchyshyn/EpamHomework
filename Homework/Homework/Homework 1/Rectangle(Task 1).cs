@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Homework.Homework_1
 {
-    class Rectangle_Task1_
+    class Rectangle_Task_1_
     {
         private Point leftUp;
         private Point rightDown;
@@ -31,7 +31,7 @@ namespace Homework.Homework_1
                 rightDown = value;
             }
         }
-        public Rectangle_Task1_(Point _LeftUp, Point _RightDown)
+        public Rectangle_Task_1_(Point _LeftUp, Point _RightDown)
         {
             leftUp = _LeftUp;
             rightDown = _RightDown;
