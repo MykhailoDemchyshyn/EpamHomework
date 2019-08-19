@@ -111,17 +111,20 @@ namespace Homework
                     #region if n==5
                     else if (n == "5")
                     {
-                        Console.Write("enter real numb 1");
+                        Console.Write("enter real part of numb 1=");
                         double real = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("enter imaginary numb 1");
+                        Console.Write("enter imaginary part of numb 1=");
                         double imaginary = Convert.ToDouble(Console.ReadLine());
                         ComplexNumber_Task5_ numb1 = new ComplexNumber_Task5_(real, imaginary);
-                        Console.Write("enter real numb 2");
+                        Console.Write("enter real part of numb 2=");
                         real = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("enter imaginary numb 1");
+                        Console.Write("enter imaginary part of numb 2=");
                         imaginary = Convert.ToDouble(Console.ReadLine());
                         ComplexNumber_Task5_ numb2 = new ComplexNumber_Task5_(real, imaginary);
-                        Console.WriteLine($"numb1*numb2={numb1 * numb2}; numb1/numb2={numb1 / numb2}");
+                        ComplexNumber_Task5_ Product = numb1 * numb2;
+                        ComplexNumber_Task5_ Quotient = numb1 / numb2;
+                        Console.WriteLine($"numb1*numb2 real={Product.Real}; imaginamry={Product.Imaginary}");
+                        Console.WriteLine($"numb1 / numb2 real=={ Quotient.Real}; imaginary={Quotient.Imaginary}");
                     }
                     #endregion
                 }
