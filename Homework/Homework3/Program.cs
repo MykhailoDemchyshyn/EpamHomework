@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Homework3
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -65,7 +65,8 @@ namespace Homework3
                     }
                     finally
                     {
-                        DisplayPage(NumberPage, arr);
+                        Program pr = new Program();
+                        pr.DisplayPage(NumberPage, arr);
                     }
                     
                     
@@ -111,11 +112,12 @@ namespace Homework3
             
             return arr;
         }
-        public static void DisplayPage(int NumberPage, List<string> arr)
+        public string DisplayPage(int NumberPage, List<string> arr)
         {
             Console.WriteLine();
             Console.WriteLine($"{NumberPage} = {arr[NumberPage-1]}");
             Console.WriteLine();
+            return arr[NumberPage - 1];
         }
     }
 }

@@ -187,7 +187,6 @@ namespace Homework
                     #endregion
                 }
             }
-            Console.ReadKey();
         }
     }
 }
